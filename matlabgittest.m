@@ -1,3 +1,4 @@
+clear
 t = 0:0.1:20;
 x = exp(t);
 y = exp(t).*sin(t);
