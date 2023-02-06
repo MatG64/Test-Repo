@@ -1,10 +1,14 @@
-clear
-t = 0:0.1:20;
-x = exp(t);
-y = exp(t).*sin(t);
+m = [];
+for x = 1:50
+    v = [];
+    jj=0;
+    while jj<50
+        v(end+1)=jj.*x;
+        jj = jj +1;
+    end
+    m(end+1, : )=v;
+end
 
-figure
-plot(t,x);
-
-figure
-plot(x,y);
+disp(m);
+figure;
+surf(m1);
